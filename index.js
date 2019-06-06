@@ -30,7 +30,7 @@ var indexTimestamp = new Date().toISOString().replace(/\-/g, '.').replace(/T.+/,
 
 /* Globals */
 var esDomain = {
-    endpoint: `${process.env.HOST || 'es.plutux.com'}`,
+    endpoint: `${process.env.HOST}`,
     region: 'ap-southeast-1',
     index: 'elblogs-' + indexTimestamp, // adds a timestamp to index. Example: elblogs-2016.03.31
     doctype: 'elb-access-logs',
